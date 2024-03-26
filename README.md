@@ -20,6 +20,7 @@ This projects gets repositories data from github api, following next [Documentat
 
 ## Trade-offs
 This challenge is more focused on performance and functionality, that's why you can find a SSR config and a paginated service (using React Query infiniteQuery).
+<br>
 <img src="./public/assets/redcare-performance.png" alt="performance" width="380">
 <img src="./public/assets/redcare-state.png" alt="devtools" width="380">
 
