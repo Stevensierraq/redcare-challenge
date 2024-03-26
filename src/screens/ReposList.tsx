@@ -4,6 +4,7 @@ import RepoCard from "../components/RepoCard";
 import { Button, Text } from "@chakra-ui/react";
 import useFavoriteRepos from "@/hooks/useFavoriteRepo";
 import useGetInfiniteRepos from "@/hooks/useInfiniteRepos";
+import { Repository } from "../entities/Repository";
 
 export default function ReposList() {
   const { fetchNextPage, isFetching, error, repositories, hasNextPage } =
@@ -16,7 +17,7 @@ export default function ReposList() {
 
   return (
     <>
-      {repositories?.map((repo) => (
+      {repositories?.map((repo: Repository) => (
         <RepoCard
           data={repo}
           key={repo?.id}
